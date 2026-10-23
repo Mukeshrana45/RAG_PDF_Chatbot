@@ -1,0 +1,40 @@
+# requirements.txt — updated to use Groq API for fast inference
+
+# LangChain core
+langchain>=0.3.0
+
+# LangChain community integrations — PyPDFLoader, FAISS
+langchain-community>=0.3.0
+
+# LangChain text splitters — separate package in 0.3+
+langchain-text-splitters>=0.3.0
+
+# LangChain HuggingFace — embeddings wrapper
+langchain-huggingface>=0.1.0
+
+# LangChain Groq — Groq API wrapper (replaces local Flan-T5)
+langchain-groq>=0.1.0
+
+# FAISS CPU — vector similarity search
+faiss-cpu>=1.9.0
+
+# Sentence Transformers — all-MiniLM-L6-v2 embedding model
+sentence-transformers>=3.0.0
+
+# HuggingFace Transformers — required by sentence-transformers
+transformers>=4.44.0
+
+# PyTorch CPU — required by sentence-transformers (much smaller without Flan-T5)
+torch>=2.4.0
+
+# Flask — serves the custom HTML UI and API endpoints
+flask>=3.0.0
+
+# PyPDF — extracts text from PDF files
+pypdf>=4.3.0
+
+# HuggingFace Hub — model downloads
+huggingface-hub>=0.24.0
+
+# python-dotenv — loads .env file so you don't type the key every time
+python-dotenv>=1.0.0

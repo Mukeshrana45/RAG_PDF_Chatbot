@@ -1,0 +1,56 @@
+# .gitignore — files that should NOT be pushed to GitHub
+
+# Python cache files — generated automatically, not part of source code
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environment folders — too large to push, recreated from requirements.txt
+venv/
+env/
+.env/
+.venv/
+
+# Environment variables — NEVER push API keys or secrets to GitHub
+.env
+*.env
+
+# HuggingFace model cache — models are downloaded automatically, not stored in repo
+# These can be 100MB–10GB, never commit them
+.cache/
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# FAISS index files — regenerated each run from the PDF
+*.faiss
+*.index
+faiss_index/
+
+# Uploaded PDF files — user data, not part of the project
+*.pdf
+uploads/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+
+# Gradio temp files
+gradio_cached_examples/
+flagged/
+
+# Logs
+*.log
+logs/
